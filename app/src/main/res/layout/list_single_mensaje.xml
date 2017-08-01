@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="20dp">
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_info_details"
+        android:id="@+id/infoMensaje"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/remitenteMensaje"
+        android:text="Usuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textAlignment="center" />
+
+    <!--<Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerVideos"
+        android:layout_weight="2" />-->
+
+    <Button
+        android:text="Borrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/borrarMensaje"
+        android:layout_weight="2" />
+
+
+</LinearLayout>

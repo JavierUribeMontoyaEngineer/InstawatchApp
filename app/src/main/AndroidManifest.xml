@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.javi.instawatch">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+     <uses-permission android:name="android.permission.READ_PROFILE" />
+     <uses-permission android:name="android.permission.READ_CONTACTS" />-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleTop"
+        android:supportsRtl="true"
+
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.NavigationActivity"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+        android:name=".activities.RegisterActivity"
+        android:label="@string/title_activity_register" />
+        <activity
+            android:name=".activities.CloseActivity"
+            android:label="CloseActivity" />
+        <activity
+            android:name=".activities.VideosActivity"
+            android:label="@string/title_activity_videos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AddVideoActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activities.ColaboracionesActivity" />
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".fcm.DeleteTokenService"
+            android:exported="false" />
+        <service
+            android:name=".fcm.EnviarPeticionService"
+            android:exported="false" />
+        <service
+            android:name=".fcm.EnviarAceptacionPeticionService"
+            android:exported="false" />
+        <service
+            android:name=".fcm.EnviarMensajeVideoService"
+            android:exported="false" />
+
+        <activity android:name=".activities.MensajesActivity" />
+        <activity android:name=".activities.NuevoMensajeActivity" />
+        <activity android:name=".activities.MultipleVideosChoiceActivity" />
+    </application>
+
+</manifest>

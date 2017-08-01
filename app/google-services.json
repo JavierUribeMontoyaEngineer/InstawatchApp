@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1005137725735",
+    "firebase_url": "https://instawatch-5cf13.firebaseio.com",
+    "project_id": "instawatch-5cf13",
+    "storage_bucket": "instawatch-5cf13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005137725735:android:d546190401f73bca",
+        "android_client_info": {
+          "package_name": "com.example.javi.instawatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005137725735-6jmov44rk6pqi7mt8l91e27b6717f42k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAViCvfhhXSF3YHFPEF4ODOd-Rq6qHjouY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
