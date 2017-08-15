@@ -1,5 +1,4 @@
 # InstawatchApp 
 
-App realizada como Trabajo Fin de Grado para la Universidad de Murcia. Esta App aprovecha un backend realizado en java y se modifica añadiendo una capa de servicios RestFul a una aplicación web funcional es capaz de
-funcionar en Android nativo. La App utiliza la API de Youtube y se utiliza de manera amplia la API FCM, API que sirve para enviar notificaciones en Android, habiendo implementado
-un App Server y permitiendo enviar notificaciones a todos los dispositivos logueados para un usuario.
+App realizada como Trabajo Fin de Grado para la Facultad de Informática de la Universidad de Murcia. Esta App aprovecha un backend realizado en Java y se amplía su funcionalidad añadiendo una capa de servicios RestFul permitiendo interoperabilidad con cualquier Frontend. La App utiliza la API de Youtube para visualizar y buscar los vídeos, y se utiliza la API FCM para enviar notificaciones. Se puede visualizar una demo a través de este enlace: 
+https://www.dropbox.com/s/npo6757iaqzwql8/demoInstawatch.mp4?dl=0 
